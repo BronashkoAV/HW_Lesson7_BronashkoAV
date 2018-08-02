@@ -53,6 +53,7 @@
             this.btnGuessing.TabIndex = 1;
             this.btnGuessing.Text = "Guessing game";
             this.btnGuessing.UseVisualStyleBackColor = true;
+            this.btnGuessing.Click += new System.EventHandler(this.btnGuessing_Click);
             // 
             // btnExit
             // 

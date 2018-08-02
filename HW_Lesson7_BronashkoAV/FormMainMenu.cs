@@ -34,5 +34,13 @@ namespace HW_Lesson7_BronashkoAV
         {
             this.Close();
         }
+
+        private void btnGuessing_Click(object sender, EventArgs e)
+        {
+            FormGuessingGame GuessingGame = new FormGuessingGame();
+            this.Hide();
+            GuessingGame.ShowDialog();
+            this.Show();
+        }
     }
 }

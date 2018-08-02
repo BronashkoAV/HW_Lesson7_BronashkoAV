@@ -51,6 +51,12 @@
     <Compile Include="FormDoubler.Designer.cs">
       <DependentUpon>FormDoubler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGuessingGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGuessingGame.Designer.cs">
+      <DependentUpon>FormGuessingGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormDoubler.resx">
       <DependentUpon>FormDoubler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGuessingGame.resx">
+      <DependentUpon>FormGuessingGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
