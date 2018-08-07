@@ -13,9 +13,10 @@ namespace HW_Lesson7_BronashkoAV
     public partial class FormGuessingGame : Form
     {
 
-        int target, input;
+        int target, input, step;
         public int Target { get => target; set => target = value; }
         public int Input { get => input; set => input = value; }
+        public int Step { get => step; set => step = value; }
 
         public FormGuessingGame()
         {
@@ -32,17 +33,24 @@ namespace HW_Lesson7_BronashkoAV
             if (e.KeyCode == Keys.Enter) btnOk.PerformClick();
         }
 
+        private void btnToMainMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void tbInput_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnOk_Click(object sender, EventArgs e)
         {
             Input = Convert.ToInt32(tbInput.Text);
-            if (Input == Target) lblHint.Text = "Поздравляю! Вы угадали!";
-            if (Input > Target) lblHint.Text = "Попытайтесь еще. Нужное число меньше";
-            if (Input < Target) lblHint.Text = "Попытайтесь еще. Нужное число больше";
+            Step++;
+            lblHint.Text = $"Кол-во попыток: {Step}";
+            if (Input == Target) { MessageBox.Show($"Поздравляю! Вы угадали!\r\nВам понадобилось всего {Step} попыток.\r\nИгра окончена"); this.Close(); }
+            if (Input > Target) MessageBox.Show("Попытайтесь еще. Нужное число меньше");
+            if (Input < Target) MessageBox.Show("Попытайтесь еще. Нужное число больше");
         }
     }
 }

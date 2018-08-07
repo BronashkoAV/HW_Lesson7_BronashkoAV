@@ -84,7 +84,7 @@
             this.btnToMainMenu.Name = "btnToMainMenu";
             this.btnToMainMenu.Size = new System.Drawing.Size(100, 30);
             this.btnToMainMenu.TabIndex = 4;
-            this.btnToMainMenu.Text = "Exit to Main Menu";
+            this.btnToMainMenu.Text = "Main Menu";
             this.btnToMainMenu.UseVisualStyleBackColor = true;
             this.btnToMainMenu.Click += new System.EventHandler(this.btnToMainMenu_Click);
             // 

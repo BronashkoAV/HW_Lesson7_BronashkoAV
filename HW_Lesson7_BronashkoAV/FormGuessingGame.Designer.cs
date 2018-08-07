@@ -31,6 +31,7 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.lblHint = new System.Windows.Forms.Label();
             this.tbInput = new System.Windows.Forms.TextBox();
+            this.btnToMainMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOk
@@ -48,9 +49,9 @@
             this.lblHint.AutoSize = true;
             this.lblHint.Location = new System.Drawing.Point(13, 141);
             this.lblHint.Name = "lblHint";
-            this.lblHint.Size = new System.Drawing.Size(63, 13);
+            this.lblHint.Size = new System.Drawing.Size(93, 13);
             this.lblHint.TabIndex = 2;
-            this.lblHint.Text = "Подсказка";
+            this.lblHint.Text = "Кол-во попыток: ";
             // 
             // tbInput
             // 
@@ -59,11 +60,22 @@
             this.tbInput.Size = new System.Drawing.Size(100, 20);
             this.tbInput.TabIndex = 3;
             // 
+            // btnToMainMenu
+            // 
+            this.btnToMainMenu.Location = new System.Drawing.Point(197, 226);
+            this.btnToMainMenu.Name = "btnToMainMenu";
+            this.btnToMainMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnToMainMenu.TabIndex = 4;
+            this.btnToMainMenu.Text = "Main Menu";
+            this.btnToMainMenu.UseVisualStyleBackColor = true;
+            this.btnToMainMenu.Click += new System.EventHandler(this.btnToMainMenu_Click);
+            // 
             // FormGuessingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnToMainMenu);
             this.Controls.Add(this.tbInput);
             this.Controls.Add(this.lblHint);
             this.Controls.Add(this.btnOk);
@@ -79,5 +91,6 @@
         private System.Windows.Forms.TextBox tbInput;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Label lblHint;
+        private System.Windows.Forms.Button btnToMainMenu;
     }
 }
